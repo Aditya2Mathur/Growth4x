@@ -1,46 +1,27 @@
-/*-----------------------------------------------------------------------------------
-
-    Theme Name: Collax - Creative Agency, And Portfolio HTML5 Template
-    Author: Theme_Pure
-    Support: help.themepure.net/support
-    Version: 1.1
-
------------------------------------------------------------------------------------
 
 /************ TABLE OF CONTENTS ***************
 
     01. theme defult css start
 	02. header css start
 	03. hero css start
-	04. creative css start
-	05. cta css start
 	06. brand css start
 	07. service css start
 	08. feature css start
-	09. business css start
-	10. project css start
-	11. price css start
 	12. about css start
 	13. testimonial css start
 	14. team css start
-	15. mission css start
-	16. job css start
 	17. chose css start
 	18. case css start
-	19. product css start
 	20. industri css start
 	21. home-corporate css start
 	22. home-blog css start
 	23. blog css start
-	24. news css start
-	25. newsletter css start
 	26. contact css start
 	27. footer css start
 
 /**********************************************/
 /*----------------------------------------*/
-/*  01. theme defult css start
-/*----------------------------------------*/
+
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet');
 :root {
   /**
@@ -67,7 +48,7 @@
   --tp-text-p: #8A90A2;
   --tp-theme-1: #5956E9;
   --tp-theme-2: #423EF3;
-  --tp-theme-primary: #FFDC60;
+  --tp-theme-primary:#FFDC60;
   --tp-theme-secondary: #57c9da;
   --tp-border-1: #E8ECF2;
   --tp-border-2: #4E4E59;
@@ -586,7 +567,7 @@ input[type=color] {
 }
 .tp-btn-sm-sky::before, .tp-btn-sm-sky::after {
   content: "";
-  background: #FFDC60;
+  background: rgb(9, 9, 123);
   height: 50%;
   width: 0;
   position: absolute;
