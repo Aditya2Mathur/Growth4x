@@ -48,7 +48,7 @@
   --tp-text-p: #8A90A2;
   --tp-theme-1: #5956E9;
   --tp-theme-2: #423EF3;
-  --tp-theme-primary:#FFDC60;
+  --tp-theme-primary:#16ff49;
   --tp-theme-secondary: #57c9da;
   --tp-border-1: #E8ECF2;
   --tp-border-2: #4E4E59;
@@ -441,7 +441,7 @@ input[type=color] {
 }
 .tp-btn::before, .tp-btn::after {
   content: "";
-  background: #FFDC60;
+  background: #16ff49;
   height: 50%;
   width: 0;
   position: absolute;
@@ -630,7 +630,7 @@ input[type=color] {
 }
 .tp-btn-sky::before, .tp-btn-sky::after {
   content: "";
-  background: #FFDC60;
+  background: #16ff49;
   height: 50%;
   width: 0;
   position: absolute;
@@ -759,7 +759,7 @@ input[type=color] {
 }
 .tp-btn-sm::before, .tp-btn-sm::after {
   content: "";
-  background: #FFDC60;
+  background: #16ff49;
   height: 50%;
   width: 0;
   position: absolute;
@@ -793,7 +793,7 @@ input[type=color] {
   font-size: 16px;
   font-weight: 700;
   color: var(--tp-theme-1);
-  background: #EBEBF9;
+  background: #16FF49;
   height: 70px;
   line-height: 70px;
   text-align: center;
@@ -1028,7 +1028,12 @@ input[type=color] {
   left: 0;
   right: auto;
 }
-
+.gradient-text-hero{
+  
+  background: -webkit-linear-gradient(180deg, rgba(22,255,73,1)0% , rgba(5,24,82,1)  100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 .tp-btn-border-sm {
   display: inline-block;
   font-size: 16px;
@@ -5429,7 +5434,7 @@ input[type=color] {
 }
 .tp-sv-box:before {
   content: "";
-  background-image: linear-gradient(-90deg, #5956E9 0%, #FFDC60 100%);
+  background-image: linear-gradient(-90deg, #5956E9 0%, #16ff49 100%);
   opacity: 0.3;
   height: 27px;
   width: 84%;
@@ -8742,7 +8747,7 @@ input[type=color] {
 }
 
 .tp-testimonial-slider-section .swiper-slide.swiper-slide-active {
-  border: 1px solid #FFDC60;
+  border: 1px solid #16ff49;
   border-radius: 20px;
 }
 
@@ -10310,7 +10315,7 @@ input[type=color] {
   color: #141515;
 }
 .product-rating a {
-  color: #FFDC60;
+  color: #16ff49;
 }
 .product-dprice {
   font-weight: 400;
@@ -10403,7 +10408,7 @@ input[type=color] {
 }
 .product-rating a {
   font-size: 16px;
-  color: #FFDC60;
+  color: #16ff49;
 }
 
 .product-dinfo {
@@ -10502,7 +10507,7 @@ input[type=color] {
 
 .user-rating ul li {
   display: inline-block;
-  color: #FFDC60;
+  color: #16ff49;
 }
 
 .comments-text span, .comments-text p {
@@ -10522,7 +10527,7 @@ input[type=color] {
 }
 .comment-rating ul li {
   display: inline-block;
-  color: #FFDC60;
+  color: #16ff49;
 }
 
 .comment-input textarea {
@@ -11434,7 +11439,7 @@ input[type=color] {
 .corporate-testi__rating span {
   font-weight: 900;
   font-size: 12px;
-  color: #FFDC60;
+  color: #16ff49;
 }
 .corporate-testi__rating span.author-position {
   font-weight: 500;
@@ -15775,4 +15780,73 @@ blockquote cite::before {
 
 
 
-/*# sourceMappingURL=style.css.map */
+
+/* 
+.container{
+  max-width:960px; margin:0 auto; position:relative;
+} */
+
+.step-wrapper{
+ margin:30px; margin-bottom:200px;  position:relative;
+}
+
+.linestep{ 
+  text-align:center;  max-width:250px; position:absolute;
+ .num {
+   color:#fff; border-radius:100px;
+   display:inline-block;
+   width: 40px;
+   height: 40px; text-align:center;
+   line-height:40px; font-weight:bold;
+   background: #452DF8;
+ }
+ p{
+   width: 250px;
+   position: absolute;
+   margin-top:7px;
+   font-weight: 500;
+   line-height: normal;
+   font-size: 18px;
+ }
+
+ p.top{	bottom:50px; left: -110px;	}
+ p.bottom{	left: -110px;	}
+ p.left{ width: 200px;   right: 34px;		top: -17px;	}
+ p.right{ width: 200px;  left: 34px; 		top: -17px;	}
+}
+
+.linestep{ visibility:hidden;  }
+.path{ visibility:hidden; }
+
+.move-line{
+ .path{
+   visibility:visible;
+   stroke-dasharray: 3700;
+   stroke-dashoffset: 3700;
+   animation: moveline 4s linear forwards;
+ }
+ .linestep{
+   animation-name: show-step-item;
+   animation-duration:.2s;
+   animation-fill-mode: forwards;
+ }
+ .linestep1{ animation-delay:.4s; }
+ .linestep2{ animation-delay:.8s; }
+ .linestep3{ animation-delay:1.2s; }
+ .linestep4{ animation-delay:1.6s; }
+ .linestep5{ animation-delay:2s; }
+ .linestep6{ animation-delay:2.4s; }
+
+}
+
+
+@keyframes show-step-item{
+ from {  transform: scale(.2); opacity: 0}
+ to{ visibility:visible; transform: scale(1); opacity: 1 }
+}
+
+@keyframes moveline {
+   to {
+     stroke-dashoffset: 0;
+   }
+}
