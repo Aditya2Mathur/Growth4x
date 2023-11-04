@@ -3057,12 +3057,13 @@ input[type=color] {
   top: 0;
   left: 0;
   right: 0;
-  background:#021751;
+  background:#1135d3;
   width: 100%;
   padding-top: 0px;
   animation: 300ms ease-in-out 0s normal none 1 running fadeInDown;
   box-shadow: 0px 2px 55px #021751;
   z-index: 9999;
+ 
 }
 @media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
   .header-sticky {
