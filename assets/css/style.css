@@ -469,6 +469,11 @@ input[type=color] {
   left: 0;
   right: auto;
 }
+.header-color-nav{
+  color: rgb(110, 26, 26);
+  background-color: #172526;
+
+}
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .tp-btn {
     height: 60px;
@@ -2773,11 +2778,14 @@ input[type=color] {
 .tp-main-menu ul li a {
   font-size: 18px;
   font-weight: 500;
-  color: var(--tp-common-white);
+  color: white;
   text-transform: capitalize;
   position: relative;
   padding: 37px 0;
   display: inline-block;
+}
+#top-main-menu ul li a{
+  color: #000;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .tp-main-menu ul li a {
