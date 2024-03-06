@@ -345,6 +345,7 @@ input[type=color] {
   }
 }
 @media (max-width: 767px) {
+  
   .gx-120 {
     --bs-gutter-x: 0px;
   }
